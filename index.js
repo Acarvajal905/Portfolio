@@ -2,6 +2,7 @@
 const contactButton = document.getElementById('contact');
 const resumeButton = document.getElementById('resume');
 const portfolioButton = document.getElementById('portfolio');
+const skillsButton = document.getElementById('skills');
 
 
 
@@ -11,6 +12,7 @@ let allModals = document.getElementsByClassName('modal') // all modal Html colle
 let contactModal = document.getElementById('contactModal');
 let resumeModal = document.getElementById('resumeModal');
 let portfolioModal = document.getElementById('portfolioModal');
+let skillsModal = document.getElementById('skillsModal');
 
 
 // ================= Opening Modal EventHandler ===================
@@ -29,6 +31,10 @@ function openModal(event) {
       resumeModal.style.visibility = 'visible';
       resumeModal.style.height = '80vh'
       break;
+    case 'skills':
+      skillsModal.style.visibility = 'visible';
+      skillsModal.style.height = '80vh'
+      break;
     case 'portfolio':
       portfolioModal.style.visibility = 'visible';
       portfolioModal.style.height = '80vh'
@@ -41,6 +47,7 @@ function openModal(event) {
 contactButton.addEventListener('click', openModal)
 resumeButton.addEventListener('click', openModal)
 portfolioButton.addEventListener('click', openModal)
+skillsButton.addEventListener('click', openModal)
 
 
 
@@ -53,6 +60,8 @@ function overlayCloseModal() {
   modalOverlay.style.visibility = 'hidden'
 }
 modalOverlay.addEventListener('click', overlayCloseModal)
+
+
 
 
 
