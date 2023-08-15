@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap");
 
 /* width */
 ::-webkit-scrollbar {
@@ -19,7 +19,7 @@
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background:rgb(0, 204, 0);
+  background: rgb(0, 204, 0);
 }
 
 @-webkit-keyframes grain {
@@ -154,21 +154,19 @@
 
   height: 100vh;
   width: 100vw;
-  
+
   -ms-grid-rows: 40vh auto;
   grid-template-rows: 40vh auto;
 
-  
   color: white;
   font-family: "Inconsolata", Consolas, monaco, monospace;
   position: absolute;
-  top: 50%; 
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
   z-index: 1;
 }
-
 
 a {
   color: white;
@@ -178,7 +176,6 @@ a {
 .modelContainer {
   margin: auto;
   display: inline-block;
- 
 }
 
 .profile {
@@ -375,9 +372,8 @@ embed {
 
 .smallerText {
   font-size: 0.85em;
+  padding-right: 10px;
 }
-
-
 
 #contactModal {
   text-align: center;
@@ -386,7 +382,7 @@ embed {
 }
 
 strong {
-  color:  rgb(0, 204, 0);
+  color: rgb(0, 204, 0);
   font-weight: 300;
 }
 
@@ -399,9 +395,8 @@ i:hover {
 }
 
 .green {
-  color:  rgb(0, 204, 0);
+  color: rgb(0, 204, 0);
 }
-
 
 .controlers {
   text-align: center;
@@ -412,7 +407,7 @@ i:hover {
   background: none;
   border: none;
   color: white;
-  font-family: 'Inconsolata',Consolas, monaco, monospace;
+  font-family: "Inconsolata", Consolas, monaco, monospace;
   padding-left: 20px;
   padding-right: 20px;
 }
@@ -436,82 +431,75 @@ i:hover {
 }
 
 .box {
-  position: 'absolute';
-  top: '50%';
-  left: '50%';
-  transform: 'translate(-50%, -50%)';
-  
-  text-align: 'center';
-  z-index: 1
+  position: "absolute";
+  top: "50%";
+  left: "50%";
+  transform: "translate(-50%, -50%)";
+
+  text-align: "center";
+  z-index: 1;
 }
 
 .typewriter {
   display: flex;
   position: absolute;
- 
+
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: calc(18px + 1.3vmin);
   color: rgb(0, 204, 0);
-  border-right: .15em solid rgb(0, 204, 0);
-  animation: 
-      blink-caret 0.5s  infinite;
+  border-right: 0.15em solid rgb(0, 204, 0);
+  animation: blink-caret 0.5s infinite;
 }
-
 
 /* The typewriter cursor effect */
 @keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: rgb(0, 204, 0); }
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: rgb(0, 204, 0);
+  }
 }
-
 
 @media only screen and (max-width: 1200px) {
-  .typewriter  {
+  .typewriter {
     font-size: calc(15px + 1.3vmin);
     white-space: nowrap; /* Keeps the content on a single line */
   }
-
 }
 @media only screen and (max-width: 990px) {
-  .typewriter  {
+  .typewriter {
     font-size: calc(15px + 1.3vmin);
     white-space: nowrap; /* Keeps the content on a single line */
-
   }
-
 }
 
 @media only screen and (max-width: 768px) {
-  .typewriter  {
+  .typewriter {
     font-size: calc(10px + 1.3vmin);
     white-space: nowrap; /* Keeps the content on a single line */
-
   }
-  .japanese{
+  /* .japanese{
     margin-right: 8% !important;
     margin-top: -55% !important;
     font-size: 50px !important;
-  }
-
+  } */
 }
 
 @media only screen and (max-width: 480px) {
-  .typewriter  {
+  .typewriter {
     font-size: calc(7px + 1.3vmin);
     white-space: nowrap; /* Keeps the content on a single line */
   }
-  .japanese{
+  /* .japanese{
     margin-right: 8% !important;
     margin-top: -60% !important;
     font-size: 40px !important;
-  }
-
+  } */
 }
-
-
-
 
 .scrollelement {
   overflow: scroll;
@@ -522,7 +510,7 @@ i:hover {
   height: 45vh;
 }
 
-.japanese {
+/* .japanese {
   text-align: end;
   white-space: pre-line;
   margin-right: 15%;
@@ -541,7 +529,7 @@ font-family: 'Kosugi Maru', sans-serif;;
     .1vw 0vw   5vw #0be50b, .2vw 0vw  20vw #0be50b, .4vw 0vw  10vw #0be50b,
     .1vw 0vw  10vw #0be50b, .2vw 0vw  30vw #0be50b, .4vw 0vw  10vw #0be50b;
   
-}
+} */
 
 .navbarContainer {
   z-index: 0;
